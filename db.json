@@ -1,0 +1,74 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "priority": "MEDIUM",
+      "taskStatus": "IN_PROGRESS",
+      "assignedTo": "John Doe",
+      "taskSummary": "Finish project"
+    },
+    {
+      "id": "2",
+      "priority": "HIGH",
+      "taskStatus": "OPEN",
+      "assignedTo": "Jane Smith",
+      "taskSummary": "Review code"
+    },
+    {
+      "id": "3",
+      "priority": "LOW",
+      "taskStatus": "IN_PROGRESS",
+      "assignedTo": "Robert Johnson",
+      "taskSummary": "Update documentation"
+    },
+    {
+      "id": "4",
+      "priority": "UNASSIGNED",
+      "taskStatus": "OPEN",
+      "assignedTo": "Emily Davis",
+      "taskSummary": "Implement new feature"
+    },
+    {
+      "id": "5",
+      "priority": "HIGH",
+      "taskStatus": "IN_PROGRESS",
+      "assignedTo": "Michael Wilson",
+      "taskSummary": "Fix critical bug"
+    },
+    {
+      "id": "6",
+      "priority": "LOW",
+      "taskStatus": "COMPLETED",
+      "assignedTo": "Olivia Martinez",
+      "taskSummary": "Perform testing"
+    },
+    {
+      "id": "7",
+      "priority": "MEDIUM",
+      "taskStatus": "OPEN",
+      "assignedTo": "William Taylor",
+      "taskSummary": "Refactor codebase"
+    },
+    {
+      "id": "8",
+      "priority": "HIGH",
+      "taskStatus": "IN_PROGRESS",
+      "assignedTo": "Sophia Brown",
+      "taskSummary": "Conduct code review meeting"
+    },
+    {
+      "id": "9",
+      "priority": "UNASSIGNED",
+      "taskStatus": "OPEN",
+      "assignedTo": "Daniel White",
+      "taskSummary": "Create user documentation"
+    },
+    {
+      "id": "10",
+      "priority": "MEDIUM",
+      "taskStatus": "COMPLETED",
+      "assignedTo": "Ava Harris",
+      "taskSummary": "Optimize performance"
+    }
+  ]
+}
