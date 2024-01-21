@@ -38,5 +38,5 @@ After this there should be two applications running:
 - I decided to separate the app into components that could potentially be reused.
 - I decided to separate the app into routes that could potentially be reused.
 - The app is fully responsive and mobile-friendly.
-- The Task component render 3 task at the time. This setting can be easily changed.
 - The Add New Task form has validation on Summary and Assignee. By default new tasks have Open status and Unassigned priority. Ideally we could make those two fields required as well but I thought that those default make sense.
+- The Task component render 3 task at the time. This setting can be easily changed. Note: the pagination is very simple but not very efficient nor scalable. I tried to implement using json-server but I couldn't get it to work as the search params were not working as expected.
