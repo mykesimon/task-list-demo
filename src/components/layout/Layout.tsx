@@ -8,8 +8,8 @@ const Layout = () => {
 			<Header />
 			<main className='flex flex-col items-center px-4 mt-8 mb-8'>
 				<Outlet />
-				<Toaster position='bottom-right' />
 			</main>
+			<Toaster position='bottom-right' />
 		</>
 	);
 };

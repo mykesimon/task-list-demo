@@ -18,7 +18,6 @@ type TaskProviderProps = {
 
 export const TaskContext = createContext<TaskContextType | null>(null);
 
-// Create a provider component
 const TaskProvider = ({ children }: TaskProviderProps) => {
 	const [tasks, setTasks] = useState<Task[]>([]);
 	const [loading, setLoading] = useState(true);
@@ -84,7 +83,7 @@ const TaskProvider = ({ children }: TaskProviderProps) => {
 function useTaskContext() {
 	const context = useContext(TaskContext);
 	if (context === null) {
-		throw new Error('useTaskContext must be used within an TaskProvider');
+		throw new Error('useTaskContext must be used within a TaskProvider');
 	}
 	return context;
 }

@@ -27,7 +27,7 @@ export const formatStatus = (text: TaskStatus) => {
 		.join(' ');
 };
 
-export const priorityTagColor = (priority: TaskPriority) => {
+export const renderPriorityIconColor = (priority: TaskPriority) => {
 	switch (priority) {
 		case 'HIGH':
 			return 'text-red-600';

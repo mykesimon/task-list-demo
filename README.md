@@ -1,30 +1,42 @@
-# React + TypeScript + Vite
+# Getting Started
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The React framework has been created using [vite](https://vitejs.dev/) with the [TypeScript template](https://vitejs.dev/guide/features.html#typescript).
 
-Currently, two official plugins are available:
+To run application:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. [Install Node](https://nodejs.org/en)
+2. Run `npm install` in this folder
+3. Run `npm run dev` in this folder to run dev environment (runs both the json-server and the FE).
 
-## Expanding the ESLint configuration
+After this there should be two applications running:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React front-end: http://localhost:5173/
+- Server: http://localhost:3001/
 
-- Configure the top-level `parserOptions` property like this:
+## Folder Structure
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- `src/` contains the React application
+- `src/components` contains the React components
+- `src/context` contains the Context Provider
+- `src/lib/types` contains generic types
+- `src/lib/utils` contains custom common utils functions
+- `src/lib/data` contains const data used in the app
+- `src/routes` contains app routes
+- `db.json` contains a mock of tasks for json-server
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Technology choices
+
+- Used Vite to bootstrap the React application
+- Typescript was useful to type props, DB schema and other things
+- Used React Router to handle routes
+- Used React Context to handle global state
+- Used Tailwind CSS to style the app
+- Used Toast to show toast messages when a task is added, removed or there is an error message to display. This provides a better user experience.
+
+## Architecture
+
+- I decided to separate the app into components that could potentially be reused.
+- I decided to separate the app into routes that could potentially be reused.
+- The app is fully responsive and mobile-friendly.
+- The Task component render 3 task at the time. This setting can be easily changed.
+- The Add New Task form has validation on Summary and Assignee. By default new tasks have Open status and Unassigned priority. Ideally we could make those two fields required as well but I thought that those default make sense.
