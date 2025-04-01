@@ -1,4 +1,8 @@
-# Getting Started
+# Task list app
+
+![Task List](/task-list.png)
+
+## Getting Started
 
 The React framework has been created using [vite](https://vitejs.dev/) with the [TypeScript template](https://vitejs.dev/guide/features.html#typescript).
 
